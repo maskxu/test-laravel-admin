@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Transaction extends Model
+{
+    //table name (if the table name is not in plural form)
+    protected $table = 'k22_transaction';
+
+    //create time
+    const CREATED_AT = 'XF_CREATETIME';
+
+    //modify time
+    const UPDATED_AT = 'LASTMODIFYDATE';
+
+    //fields
+    protected $fillable = ['id', 'PAYMENT_ID','TRANSACTION_ID','KDP_SERIAL_NUMER','CRM_ID','XF_STORECODE','XF_TXDATE','XF_DOCNO','XF_VIPCODE','XF_AMT','XF_BONUS','XF_REMARK','XF_TILLID','XF_VIPID','XF_SALESMEMOPHOTO','XF_PAYMETHODCODE','XF_CREATETIME','XF_CURRENCYCODE','XF_TXTIME','XF_RULEID','XF_GVAMOUNT','XF_ITEMCODE','XF_TRADESOURCES','XF_PROMOTIONAMOUNT','XF_TENDERCODE','XF_BANKCARDPHOTO','XF_SALESTIME','XF_REMARK2','XF_PROMOTYPE','XF_STANDARDBONUS','XF_PROMOBONUS','XF_ISSUINGBANK','XF_VIPGRADE','XF_EXPERIENCECARD','ORADOCNO','BONUSOURCE','ORAGINAMOUNT','XF_BATCH_ID','XF_BONUS_EXPIRE_TYPE','XF_BONUS_EXPIRE_TIME','XF_CONFIRMBY','XF_CONFIRMDATE','XF_VOIDSTATUS','XF_STORENAME','VIPACCOUNTNO','COMPLETED_DATE','XF_ACTION','XF_MALLID','XF_STORENAME_SC','XF_STORENAME_TC','XF_APPROVAL_ID','XF_ISPROVED','OCRAPPROVEUPLOADBATCHID','NEW_DATA_IND','XF_VOIDREASON','PointRegAmt','ServiceChargeAmt','KDorllaerAmt','CouponAmt','CouponIds','UploadChannel','AuthCode','CardNumber','LASTMODIFYDATE','','LASTMODIFYUSER','campaign'];
+
+
+}
